@@ -8,13 +8,17 @@ A full-stack, production-ready team task management application built with React
 <summary>Click to view screenshots</summary>
 
 ### Dashboard
-![Dashboard](assets/dashboard.png)
+<img width="1906" height="894" alt="image" src="https://github.com/user-attachments/assets/3c4330f0-e588-461b-ab23-8de9c8b620b0" />
+
 
 ### Projects View
-![Projects](assets/projects.png)
+<img width="875" height="541" alt="image" src="https://github.com/user-attachments/assets/71675172-9904-42df-acda-bced4657a9d9" />
+<img width="1919" height="489" alt="image" src="https://github.com/user-attachments/assets/040b89a3-f54d-40cd-91b5-20a4da3e6d71" />
+
 
 ### Task Details
-![Task Details](assets/task.png)
+<img width="1919" height="889" alt="image" src="https://github.com/user-attachments/assets/4aae08d2-cd5b-4bd4-ab99-4542a47c03ce" />
+
 
 </details>
 
