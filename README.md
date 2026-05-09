@@ -2,6 +2,22 @@
 
 A full-stack, production-ready team task management application built with React, Node.js, Express, and MongoDB.
 
+## 📸 Screenshots
+
+<details>
+<summary>Click to view screenshots</summary>
+
+### Dashboard
+![Dashboard](assets/dashboard.png)
+
+### Projects View
+![Projects](assets/projects.png)
+
+### Task Details
+![Task Details](assets/task.png)
+
+</details>
+
 ## 🚀 Quick Start
 
 ### Prerequisites
