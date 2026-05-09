@@ -12,18 +12,28 @@ const useAuthStore = create(
 
       login: async (email, password) => {
         set({ isLoading: true })
-        const { data } = await api.post('/auth/login', { email, password })
-        set({ user: data.user, token: data.token, isAuthenticated: true, isLoading: false })
-        api.defaults.headers.common['Authorization'] = `Bearer ${data.token}`
-        return data
+        try {
+          const { data } = await api.post('/auth/login', { email, password })
+          set({ user: data.user, token: data.token, isAuthenticated: true, isLoading: false })
+          api.defaults.headers.common['Authorization'] = `Bearer ${data.token}`
+          return data
+        } catch (error) {
+          set({ isLoading: false })
+          throw error
+        }
       },
 
       register: async (name, email, password, role) => {
         set({ isLoading: true })
-        const { data } = await api.post('/auth/register', { name, email, password, role })
-        set({ user: data.user, token: data.token, isAuthenticated: true, isLoading: false })
-        api.defaults.headers.common['Authorization'] = `Bearer ${data.token}`
-        return data
+        try {
+          const { data } = await api.post('/auth/register', { name, email, password, role })
+          set({ user: data.user, token: data.token, isAuthenticated: true, isLoading: false })
+          api.defaults.headers.common['Authorization'] = `Bearer ${data.token}`
+          return data
+        } catch (error) {
+          set({ isLoading: false })
+          throw error
+        }
       },
 
       logout: () => {
